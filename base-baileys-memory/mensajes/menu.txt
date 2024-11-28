@@ -1,13 +1,7 @@
 Elige alguna de estas opciones:
 
-Opcion 1 - Op1
-Opcion 2 - Op2
-Opcion 3 - Op3
-Opcion 4 - Op4
-Opcion 5 - Op5
-Opcion 6 - Op6
-Opcion 7 - Op7
-Opcion 8 - Op8
-Opcion 9 - Op9
+Opcion 1 - Menu / Carta
+Opcion 2 - Reservas
+Opcion 3 - Consultas
 
 Opcion 0 - Salir
