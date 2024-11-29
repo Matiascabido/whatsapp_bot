@@ -18,7 +18,7 @@
         "@whiskeysockets/baileys": "6.5.0",
         "cache-manager": "5.2.4",
         "dotenv": "^16.4.5",
-        "openai": "^4.73.1",
+        "groq-sdk": "^0.8.0",
         "wa-sticker-formatter": "4.4.4"
     },
     "devDependencies": {

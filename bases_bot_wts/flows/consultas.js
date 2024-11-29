@@ -1,5 +1,5 @@
 
-const chat = require('../chatGpt')
+const chat = require('../groq')
 const { addKeyword, EVENTS } = require('@bot-whatsapp/bot')
 const { consultaAnswer } = require('../utils/constants')
 
@@ -10,8 +10,8 @@ const flowConsultasRest =
         const prompt = 'Responde Hola'
         const consulta = ctx.body
         const answer = await chat(prompt, consulta)
-        console.log(answer.content);
-
+        console.log('ansuer = ', answer)
+        ctxFn.flowDynamic(answer.replaceAll("undefined", ''))
     })
 
 module.exports = flowConsultasRest

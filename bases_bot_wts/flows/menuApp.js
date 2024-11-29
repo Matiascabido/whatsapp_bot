@@ -5,7 +5,7 @@ const flowReservasRest = require('./reservas')
 const flowConsultasRest = require('./consultas')
 
 
-const flowMenu = addKeyword(['menu'])
+const flowMenu = addKeyword(['menu', 'Menu', 'Menú'])
 	.addAnswer([menu], { capture: true }, 
 			async (ctx, {gotoFlow, fallBack, flowDynamic}) => {
 				if (!['1','2','3','0'].includes(ctx.body)) {

@@ -23,6 +23,5 @@ module.exports = {
     princialAnswer,
     menuRestAnswer,
     reservasAnswer,
-    consultaAnswer,
-    apiKeyOpenAI
+    consultaAnswer
 }

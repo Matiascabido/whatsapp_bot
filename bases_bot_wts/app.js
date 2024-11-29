@@ -8,7 +8,7 @@ const flowMenu = require('./flows/menuApp')
 const flowMenuRest = require('./flows/menuRestaurante')
 const flowReservasRest = require('./flows/reservas')
 const flowConsultasRest = require('./flows/consultas')
-const chat = require('./chatGpt')
+const chat = require('./groq')
 
 
 const main = async () => {
@@ -28,10 +28,9 @@ const main = async () => {
         provider: adapterProvider,
         database: adapterDB,
     })
-
-    await chat()
     
     QRPortalWeb()
+
 }
 
 main()
