@@ -29,6 +29,10 @@ const main = async () => {
         database: adapterDB,
     })
     
+    const answer = await chat('Eres un asistente',  'me hace un road map para mejorar con nodejs')
+    console.log('////////// AI is thinkg... ///////')
+    console.log(answer)
+    console.log('////////// FINISH ///////')
     QRPortalWeb()
 
 }
