@@ -1,7 +1,6 @@
 const path = require('path')
 const fs = require('fs')
 
-const apiKeyOpenAI = 'sk-svcacct-Ja9OhP5EzVj8Gvpj7XsPs2t-UXUx-myywpnUygwyEtzVMmFcvl5fgyQk3sPfxS33e_ZRgT3BlbkFJu18Q-1lkF-m5rPEoNG-nAdpYdR3jzlhcKpCyh1_g3HKd43njGzstRwhItQSh4uzoNSjgwA'
 const menuPath = path.join(__dirname, '../mensajes', 'menu.txt')
 const menu = fs.readFileSync(menuPath,'utf8')
 
