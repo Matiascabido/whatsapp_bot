@@ -29,7 +29,7 @@ async function chat(prompt, consult) {
   let finalMessage = '';
 
   for await (const chunk of chatCompletion) {
-    finalMessage += `${chunk?.choices[0]?.delta?.content} `
+    finalMessage += `${chunk?.choices[0]?.delta?.content}`
   }
   return finalMessage
 }
