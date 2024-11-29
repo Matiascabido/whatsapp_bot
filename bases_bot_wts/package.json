@@ -6,7 +6,7 @@
     "scripts": {
         "prestart": "npx eslint . --no-ignore",
         "pre-copy": "cd .. && npm run  copy.lib base-baileys-memory",
-        "start": "export OPENAI_API_KEY='sk-svcacct-Tx6JvwQRYYQIbNTzsEKPg4exroUK-M5_ClSlb43NaQ-juiAkwV0QhnfZSOAVUVWT3BlbkFJOtWwwHQTWkWx9uikF8a_s6x5MnVd3UO1xdj7u7h_LJOP56YOi9mV18cBUu0EvAA' && node app.js"
+        "start": "node app.js"
     },
     "keywords": [],
     "dependencies": {
