@@ -8,7 +8,6 @@ const flowPrincipal = addKeyword(['la']).addAnswer([princialAnswer])
         const consulta = ctx.body
         let answer = await chat(prompt, consulta)
         answer = answer.replaceAll("undefined", '').trim()
-        console.log('ansuer = ', answer)
         ctxFn.flowDynamic(answer)
 })
 

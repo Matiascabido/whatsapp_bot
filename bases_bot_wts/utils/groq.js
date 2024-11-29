@@ -1,5 +1,5 @@
-require('dotenv').config
-
+require('dotenv').config()
+const fs = require('fs')
 const Groq = require('groq-sdk');
 
 const groq = new Groq({
@@ -34,4 +34,21 @@ async function chat(prompt, consult) {
   return finalMessage
 }
 
-module.exports = chat
+async function voiceToText(path) {
+  if(!fs.existsSync(path)) {
+    throw new Error('Faild!! File not found')
+  }
+  try {
+    const voiceFile = await groq.audio.transcriptions.create({
+      file: fs.createReadStream(path), // Required path to audio file - replace with your audio file!
+      model: "whisper-large-v3-turbo", // Required model to use for transcription
+      language: "es", // Optional
+    })
+    return voiceFile.text
+  } catch (error) {
+    console.error('VoiceToText faild: ', error)
+    return 'ERROR'
+  }
+}
+
+module.exports = {chat, voiceToText}
